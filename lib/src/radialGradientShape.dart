@@ -1,0 +1,8 @@
+///
+enum RadialGradientShape {
+  ///
+  ellipse,
+
+  ///
+  circle
+}
