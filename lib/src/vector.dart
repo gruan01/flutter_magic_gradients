@@ -5,19 +5,19 @@ import 'dart:math' as math;
 ///如果使用 const 构造函数, 值就不能修改了...
 class Vector {
   ///
-  static Vector zero = Vector(0, 0);
+  static Vector get zero => Vector(0, 0);
 
   ///
-  static Vector left = Vector(-1, 0);
+  static Vector get left => Vector(-1, 0);
 
   ///
-  static Vector right = Vector(1, 0);
+  static Vector get right => Vector(1, 0);
 
   ///
-  static Vector up = Vector(0, -1);
+  static Vector get up => Vector(0, -1);
 
   ///
-  static Vector down = Vector(0, 1);
+  static Vector get down => Vector(0, 1);
 
   ///
   double x;
@@ -27,6 +27,7 @@ class Vector {
 
   ///
   Vector(this.x, this.y);
+
 
   ///
   void setNamedDirection(String direction) {
